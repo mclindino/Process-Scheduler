@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 using namespace std;
 
 class Process
@@ -16,3 +17,5 @@ class Process
         int getMemory();
         int getPriority();
 };
+
+int* readParameters(string parameters);
