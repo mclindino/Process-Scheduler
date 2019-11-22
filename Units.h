@@ -1,5 +1,7 @@
 #include <iostream>
 #include <sstream>
+#include <vector>
+
 using namespace std;
 
 class Process
@@ -13,6 +15,7 @@ class Process
     public:
         void    setParameters(int arrival, int duration, int memory, int priority);
         void    modifyDuration();
+        void    modifyPriority();
         int     getArrival();
         int     getDuration();
         int     getMemory();
@@ -22,17 +25,23 @@ class Process
 class roundRobin
 {
     private:
-        Process*    process;
-        Process     current = process[0];
-        int         count = 0;
-        int         slice;
-        int         priority;
+        vector<Process>             process;
+        vector<Process>::iterator   current = process.begin();
+        int                         slice;
+        int                         priority;
     public:
+        void        setListProcess(vector<Process> process);
         void        setSlice(int slice);
-        void        setProcess(Process* process);
         void        slideEdge(int clock);
         int         setPriority(int priority);
         int         getPriority();
 };  
 
+class multiLine
+{
+    private:
+        vector<roundRobin>  lines;
+    public:
+        void        ajustProcess(Process* process, int nProcess);
+};
 int* readParameters(string parameters);
