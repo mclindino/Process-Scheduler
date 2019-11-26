@@ -55,25 +55,33 @@ void roundRobin::slideEdge(int clock)
         }
     }   
 }
+vector<Process> roundRobin::setLines(Process individual_process, int priority)
+{
+    this->priority = priority;
+    return process.push_back(individual_process);
+}
 
 void  multiLine::ajustProcess(Process* process, int nProcess)
-{  
-
+{    
     for(int i = 0; i < nProcess; i++)
     {
-        switch (process[i].getPriority())
+        switch(process[i].getPriority())
         {
             case 0:
-                priority_0.push_back(process[i]);
+                lines.push_back(line.setLines(process[i]), 0);
             break;
             case 1:
-                priority_1.push_back(process[i]);
+                lines.push_back(line.setLines(process[i]), 1);
             break;
             case 2:
-                priority_2.push_back(process[i]);
+                lines.push_back(line.setLines(process[i]), 2);
             break;
             case 3:
-                priority_3.push_back(process[i]);
+                lines.push_back(line.setLines(process[i]), 3);
+            break;
+            case 4:
+                lines.push_back(line.setLines(process[i]), 4);
+            break;
         }
     }
 }
