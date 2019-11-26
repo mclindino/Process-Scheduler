@@ -30,17 +30,19 @@ class roundRobin
         int                         slice;
         int                         priority;
     public:
-        void        setListProcess(vector<Process> process);
-        void        setSlice(int slice);
-        void        slideEdge(int clock);
-        int         setPriority(int priority);
-        int         getPriority();
+        vector<Process>     setLines(Process individual_process, int priority);
+        void                setListProcess(vector<Process> process);
+        void                setSlice(int slice);
+        void                slideEdge(int clock);
+        int                 setPriority(int priority);
+        int                 getPriority();
 };  
 
 class multiLine
 {
     private:
         vector<roundRobin>  lines;
+        roundRobin          line;
     public:
         void        ajustProcess(Process* process, int nProcess);
 };
