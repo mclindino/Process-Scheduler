@@ -2,7 +2,7 @@
 
 
 int main(int argc, char* argv[])
-{
+{	
     //Informaçoes do Simulador
     int nCPUs = (int) atoi(argv[1]);
     int memory = (int) atoi(argv[2]);
@@ -21,13 +21,14 @@ int main(int argc, char* argv[])
 
         process = (Process*) realloc(process, nProcess * sizeof(Process));
         process[nProcess - 1].setParameters(parameters[0], parameters[1], 
-                                            parameters[2], parameters[3], NULL);
+                                            parameters[2], parameters[3], 10000);
+        //cout << process[nProcess-1].getMemory() << endl;
     }
 
     //Instancia e ajusta todos os processos na multifila
     multiLine lista;
     lista.ajustProcess(process, nProcess);
-    
+    printAllProcess(lista);
     //Tempo limite para processar todos os Processos (Variavel i)
     for(int slice = 0; slice < 200000; slice++)
     {

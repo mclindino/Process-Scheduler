@@ -13,9 +13,9 @@ class Process
         int      duration;
         int      memory;
         int      priority;
-        int*     CPU;
+        int      CPU;
     public:
-        void    setParameters(int arrival, int duration, int memory, int priority, int* CPU);
+        void    setParameters(int arrival, int duration, int memory, int priority, int CPU);
         void    modifyDuration();
         void    modifyPriority();
         int     getArrival();
@@ -40,7 +40,7 @@ class roundRobin
         void                setListProcess(Process* process, int nProcess);
         void                setSlice(int slice);
         Process             getCurrentProcess();
-        bool                sliceEdge(int clock, int CPU);
+        bool                sliceEdge(int clock, int current_CPU);
         int                 setPriority(int priority);
         int                 getPriority();
         int                 getLength();
@@ -61,5 +61,5 @@ class multiLine
 int* readParameters(string parameters);
 void printAllProcess(multiLine m);
 void printOneLineOfProcess(roundRobin line, int clock);
-void passProcess(Process p1, Process p2);
-bool verifyZeros(Process* r, int length);
+int verifyListProcess(Process* r, int length);
+int  processesFinder(Process* p, int length, int CPU);

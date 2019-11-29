@@ -1,6 +1,6 @@
 #include "Units.h"
 
-void Process::setParameters(int arrival, int duration, int memory, int priority, int* CPU)
+void Process::setParameters(int arrival, int duration, int memory, int priority, int CPU)
 {
     this->arrival   = arrival;
     this->duration  = duration;
@@ -14,38 +14,30 @@ int  Process::getArrival()           {   return arrival;     }
 int  Process::getDuration()          {   return duration;    }
 int  Process::getMemory()            {   return memory;      }
 int  Process::getPriority()          {   return priority;    }
-void Process::setCPU(int CPU)        {   this->CPU = &CPU;   }
-int  Process::getCPU()               {   return *(CPU);      }
+void Process::setCPU(int CPU)        {   this->CPU = CPU;   }
+int  Process::getCPU()               {   return CPU;      	 }
 
 int  roundRobin::setPriority(int priority)                 {   this->priority = priority;  		}
 int  roundRobin::getPriority()                             {   return priority;            		}
 void roundRobin::setSlice(int slice)                       {   this->slice = slice;        		}
 Process* roundRobin::getListProcess()			   		   {   return list_process;				}
 Process  roundRobin::getCurrentProcess()                   {   return list_process[current];    }
-bool roundRobin::sliceEdge(int clock, int CPU)
+bool roundRobin::sliceEdge(int clock, int current_CPU)
 {
-    if(verifyZeros(this->list_process, this->length))
-    {
-        return false;
-    }
+	int process_search = processesFinder(this->list_process, this->length, current_CPU);
+	cout << "PROCESS SEARCH: " << process_search << endl;
+	if (process_search != 404) { current = process_search; }
+	else
+	{
+		//Verifica se tem algum processo disponivel
+		int available_process = verifyListProcess(this->list_process, this->length);
+		cout << "AVAILABLE PROCESS: " << available_process << endl;
+		if(available_process != 404)	{ current = available_process; }
+		else 							{ return false; }
+	}
+    
+    list_process[current].setCPU(current_CPU);
 
-    // if(list_process[current].getDuration() == 0)
-    // {
-    //     if(current == 0) { passProcess(list_process[0],list_process[length - 1]); }
-    //     else             { passProcess(list_process[current],list_process[current-1]);}
-    //     length--;
-    // }
-    //Verifica se precisa executar o processo
-    while (list_process[current].getDuration() == 0)
-    {
-        current++;
-    }
-    //Verifica se o processo ja nao esta em uma CPU
-    // while(list_process[current].getCPU() != NULL)
-    // {
-    //     current++;
-    // }
-    // list_process[current].setCPU(&CPU);
     //Observa se está no slice para poder processar
     if (list_process[current].getArrival() <= clock)
     {
@@ -92,7 +84,7 @@ void roundRobin::setListProcess(Process* process, int nProcess)
 	for(int i = 0; i < nProcess; i++)
 	{
 		list_process[i].setParameters(process[i].getArrival(), process[i].getDuration(),
-									  process[i].getMemory(), process[i].getPriority(), NULL);
+									  process[i].getMemory(), process[i].getPriority(), process[i].getCPU());
 	}
     first = list_process[0].getArrival();
 }
@@ -104,7 +96,7 @@ void  multiLine::ajustProcess(Process* process, int nProcess)
 
 	this->multilines = (roundRobin*) malloc(5 * sizeof(roundRobin));
 	Process* prioritys = NULL;
-	int length = 0;
+	int size = 0;
 
 	for(int priority = 0; priority < 5; priority++)
 	{
@@ -112,16 +104,17 @@ void  multiLine::ajustProcess(Process* process, int nProcess)
 	    {
 	    	if(process[i].getPriority() == priority)
 	    	{
-	    		length++;
-	    		prioritys = (Process*) realloc(prioritys, length * sizeof(Process));
-	    		prioritys[length-1].setParameters(process[i].getArrival(), process[i].getDuration(), process[i].getMemory(), process[i].getPriority(), NULL);
+	    		size++;
+	    		prioritys = (Process*) realloc(prioritys, size * sizeof(Process));
+	    		prioritys[size-1].setParameters(process[i].getArrival(), process[i].getDuration(), process[i].getMemory(), process[i].getPriority(), process[i].getCPU());
+	    		cout << "Prioridade: " << priority << "\tProcess: " << prioritys[size-1].getDuration() << endl;
 	    	}
 	    }
-	    this->multilines[priority].setListProcess(prioritys, length);
-	    this->multilines[priority].setLength(length);
+	    this->multilines[priority].setListProcess(prioritys, size);
+        this->multilines[priority].setLength(size);
         this->multilines[priority].setSlice(2);
         this->multilines[priority].current = 0;
-	    length = 0;
+	    size = 0;
 	}
 
 	free(prioritys);
@@ -169,7 +162,8 @@ void printAllProcess(multiLine m)
 		{
 			cout << "\tProcesso: " << m.getMultilines()[i].getListProcess()[j].getArrival() << '-' 
 								   << m.getMultilines()[i].getListProcess()[j].getDuration() << '-'
-								   << m.getMultilines()[i].getListProcess()[j].getMemory() << endl;
+								   << m.getMultilines()[i].getListProcess()[j].getMemory() << '-'
+								   << m.getMultilines()[i].getListProcess()[j].getCPU() << endl;
 		}
 	}
 	cout << "--------------------------------------------------" << endl;
@@ -184,37 +178,34 @@ void printOneLineOfProcess(roundRobin line, int clock)
         cout << "\tProcesso: " << line.getListProcess()[i].getArrival() << "-"
                                 << line.getListProcess()[i].getDuration() << "-"
                                 << line.getListProcess()[i].getMemory() << "-"
-                                << line.getListProcess()[i].getPriority() << endl;
+                                << line.getListProcess()[i].getPriority() << "-"
+                                << line.getListProcess()[i].getCPU() << endl;
     }   
 
     cout << "\n\tProcesso Atual: " << line.getCurrentProcess().getArrival() << "-"
                                     << line.getCurrentProcess().getDuration() << "-"
                                     << line.getCurrentProcess().getMemory() << "-"
-                                    << line.getCurrentProcess().getPriority() << endl;
+                                    << line.getCurrentProcess().getPriority() << "-"
+                                    << line.getCurrentProcess().getCPU() << endl;
     cout << "--------------------------------------------------" << endl;
 }
 
-void passProcess(Process p1, Process p2)
-{    p1.setParameters(p2.getArrival(), p2.getDuration(), p2.getMemory(), p2.getPriority(), NULL); 
-     p1.setCPU(p2.getCPU());}
-
-bool verifyZeros(Process* r, int length)
-{
-    int zero = 0;
+int verifyListProcess(Process* r, int length)
+{	
     for(int i = 0; i < length; i++)
     {
-        if(r[i].getDuration() == 0)
-        {
-            zero++;
-        }
-    }
+        if((r[i].getDuration() != 0) && (r[i].getCPU() == 10000))
+        	return i;
+   	}
 
-    if(zero == (length))
+   	return 404;
+}
+
+int  processesFinder(Process* p, int length, int CPU)
+{
+    for(int process_search = 0; process_search < length; process_search++)
     {
-        return true;
+    	if((p[process_search].getCPU() == CPU) && (p[process_search].getDuration() != 0)) return process_search;
     }
-    else
-    {
-        return false;
-    }
+    return 404; 
 }
