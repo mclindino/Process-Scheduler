@@ -1,4 +1,7 @@
 #include "Units.h"
+extern int* trajeto;
+
+//Atribiu cada parametro para cada processo
 void Process::setParameters(int arrival, int duration, int memory, int priority, int CPU)
 {
     this->arrival   = arrival;
@@ -7,6 +10,8 @@ void Process::setParameters(int arrival, int duration, int memory, int priority,
     this->priority  = priority;
     this->CPU       = CPU;
 }
+
+//Set e Gets de cada variavel e modificação da duração e prioridade para o uso em outras funções
 void Process::modifyDuration()       {   this->duration--;   }
 void Process::modifyPriority()       {   this->priority--;   }
 int  Process::getArrival()           {   return arrival;     }
@@ -18,6 +23,7 @@ int  Process::getCPU()               {   return CPU;      	 }
 //int  Process::getLose_priority()     {   return lose_priority;}
 //void Process::setLose_priority(int x) { this->lose_priority = x; }
 
+//Set e Get de variaveis privadas
 void  roundRobin::setPriority(int priority)                {   this->priority = priority;  		}
 int  roundRobin::getPriority()                             {   return priority;            		}
 void roundRobin::setSlice(int slice)                       {   this->slice = slice;        		}
@@ -25,30 +31,31 @@ Process* roundRobin::getListProcess()			   		   {   return list_process;				}
 void roundRobin::setCurrent(int nCPUs)                     {   this->current = (int *) malloc(nCPUs * sizeof(int));    }
 Process  roundRobin::getCurrentProcess(int current_CPU)
 {   
-    // int available_process = verifyListProcess(this->list_process, this->length);
-    // if(available_process != 404)
-    // {
-    //     current[current_CPU] = available_process;
-        
-    // }
     return list_process[current[current_CPU]];              
 }
+
+//Funcao que avalia em cada slice se precisa trocar de processo
 bool roundRobin::sliceEdge(int clock, int current_CPU, int* memory)
 {
+    //Verifica se tem processo disponivel na fila
     if(!zeros(this->list_process, this->length, &memory))
     {
+        //Verifica se precisa trocar de processo
         if((clock % slice) == 0)
         {
-            //Processol disponivel
+            //Busca o processo disponivel
             current[current_CPU] = verifyListProcess(this->list_process,this->length, clock, current[current_CPU], &memory, current_CPU);
-            //cout << "PROCESSO ATUAL: " << current[current_CPU] << endl;
+
+            //Erro 404 -> nao achou um processo disponivel naquela fila de prioridade
             if(current[current_CPU] != 404)
             {
-                //current[current_CPU] = available_process;
-                //Pode ser processado?
+                //Verifica se pode ser processado comparando com o tempo de chegada
                 if(list_process[current[current_CPU]].getArrival() <= clock)
                 {
+                    //Atribui o processo a uma CPU
                     list_process[current[current_CPU]].setCPU(current_CPU);
+
+                    //Diminuiu 1 na duracao... quando chegar a 0, aquele processo nao precisa mais de tempo de processamento
                     list_process[current[current_CPU]].modifyDuration();
                     return true;
                 }
@@ -61,6 +68,7 @@ bool roundRobin::sliceEdge(int clock, int current_CPU, int* memory)
         }
         else
         {
+            //Nao precisa trocar de processo, entao processa o atual
             if(list_process[current[current_CPU]].getArrival() <= clock)
             {
                 if(list_process[current[current_CPU]].getDuration() != 0)
@@ -92,8 +100,10 @@ bool roundRobin::sliceEdge(int clock, int current_CPU, int* memory)
     //     processo_atual {true, false caso acabou!}
 }  
 
+
 int  roundRobin::getLength()										{	return this->length; 		}
 void roundRobin::setLength(int length)								{	this->length = length;		}
+
 void roundRobin::setListProcess(Process* process, int nProcess)
 {
 	list_process = (Process*) malloc(nProcess * sizeof(Process));
@@ -106,7 +116,9 @@ void roundRobin::setListProcess(Process* process, int nProcess)
 }
 
 void  multiLine::freeMultilines()                                   {   free(this->multilines);     }
-roundRobin*  multiLine::getMultilines()								{	return this->multilines;	}					
+roundRobin*  multiLine::getMultilines()								{	return this->multilines;	}	
+
+//Para cada multifila de prioridade, aloca os ponteiros de processos				
 void  multiLine::ajustProcess(Process* process, int nProcess, int nCPUs)
 {
 
@@ -122,8 +134,8 @@ void  multiLine::ajustProcess(Process* process, int nProcess, int nCPUs)
 	    	{
 	    		size++;
 	    		prioritys = (Process*) realloc(prioritys, size * sizeof(Process));
-	    		prioritys[size-1].setParameters(process[i].getArrival(), process[i].getDuration(), process[i].getMemory(), process[i].getPriority(), process[i].getCPU());
-	    		//cout << "Prioridade: " << priority << "\tProcess: " << prioritys[size-1].getDuration() << endl;
+	    		prioritys[size-1].setParameters(process[i].getArrival(), process[i].getDuration(), process[i].getMemory(), 
+                                                process[i].getPriority(), process[i].getCPU());
 	    	}
 	    }
 	    this->multilines[priority].setListProcess(prioritys, size);
@@ -136,6 +148,7 @@ void  multiLine::ajustProcess(Process* process, int nProcess, int nCPUs)
 	free(prioritys);
 }
 
+//Le os parametros dados em txt
 int* readParameters(string parameters)
 {
     string aux = "";
@@ -165,11 +178,12 @@ int* readParameters(string parameters)
     return values; 
 }
 
+//Printa todos os processos disponiveis em cada multifila
 void printAllProcess(multiLine m)
 {
 	int nProcess;
 	cout << "--------------------------------------------------" << endl;
-	cout << "Processos Lidos:	(Chegada/Duracao/Memoria)   \n" << endl;
+	cout << "Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   \n" << endl;
 	for(int i = 0; i < 5; i++)
 	{
 		cout << "Prioridade: " << i << endl;
@@ -185,6 +199,7 @@ void printAllProcess(multiLine m)
 	cout << "--------------------------------------------------" << endl;
 }
 
+//Printa processo atual 
 void printOneLineOfProcess(roundRobin line, int clock, int current_cpu)
 {
     cout << "--------------------------------------------------" << endl;
@@ -206,25 +221,27 @@ void printOneLineOfProcess(roundRobin line, int clock, int current_cpu)
     cout << "--------------------------------------------------" << endl;
 }
 
+//Verifica e retorna processo disponivel naquela multifila
 int verifyListProcess(Process* r, int length, int clock, int current_process, int** memory, int current_cpu)
 {	
-    //cout << "CURRENT: " << current_process << endl;
-    //cout << "CURRENT CPU: " << current_cpu << endl;
-    //cout << "Length: " << length << endl;
+
     for(int i = current_process; i < length; i++)
     {
+        //Verifica se tem tempo para ser processado
         if(r[i].getDuration() != 0)
         {
+            //Verifica se alguma CPU ja o pegou
             if(r[i].getCPU() == 10000)
             {
+                //Verifica se pode comecar a processar
                 if(r[i].getArrival() <= clock)
                 {
+                    //Verifica se tem memoria disponivel
                     if(current_process != i)
                     {
                         if((*(*memory) - r[i].getMemory() + r[current_process].getMemory()) > 0)
                         {
                             r[current_process].setCPU(10000);
-                            //cout << "MEMORIA 1: " << *(*memory) << endl;
                             *(*memory) = *(*memory) - r[i].getMemory() + r[current_process].getMemory();
                             return i;
                         }
@@ -234,7 +251,6 @@ int verifyListProcess(Process* r, int length, int clock, int current_process, in
                       if((*(*memory) - r[i].getMemory()) > 0)
                         {
                             r[current_process].setCPU(10000);
-                            //cout << "entra AQUI" << endl;
                             *(*memory) = *(*memory) - r[i].getMemory();
                             return i;
                         }  
@@ -244,11 +260,11 @@ int verifyListProcess(Process* r, int length, int clock, int current_process, in
         }
    	}
     
+    //Lista circular
     if(current_process != 404)
     {
         for(int j = 0; j < current_process; j++)
         {
-        //cout << "PROCESSO:" << current_process << "ATUALIDADE:" << j << endl;
         if(r[j].getDuration() != 0)
             {
                 if(r[j].getCPU() == 10000)
@@ -259,7 +275,6 @@ int verifyListProcess(Process* r, int length, int clock, int current_process, in
                         {
                             r[current_process].setCPU(10000);
                             *(*memory) = *(*memory) - r[j].getMemory() + r[current_process].getMemory();
-                            //cout << "NAO AKI" << endl;
                             return j;
                         }
                     }
@@ -271,7 +286,6 @@ int verifyListProcess(Process* r, int length, int clock, int current_process, in
     {
         for(int j = 0; j < length; j++)
         {
-        //cout << "PROCESSO:" << current_process << "ATUALIDADE:" << j << endl;
         if(r[j].getDuration() != 0)
             {
                 if(r[j].getCPU() == 10000)
@@ -282,7 +296,6 @@ int verifyListProcess(Process* r, int length, int clock, int current_process, in
                         {
                             r[current_process].setCPU(10000);
                             *(*memory) = *(*memory) - r[j].getMemory() + r[current_process].getMemory();
-                            //cout << "NAO AKI" << endl;
                             return j;
                         }
                     }
@@ -292,19 +305,37 @@ int verifyListProcess(Process* r, int length, int clock, int current_process, in
     }
     
 
+    //Verifica se o atual ainda tem o que processar
     if((r[current_process].getDuration() != 0) && (r[current_process].getCPU() == current_cpu))
     {
-        //cout << "ZUEIA" << endl;
+
         return current_process;
     }
    	else
     {
-        //cout << current_process << endl;
         r[current_process].setCPU(10000);
+
         return 404;
     }
 }
 
+int buscaEatualizacao(multiLine m)
+{
+    //int k = 0;
+    for(int i = 0; i < 5; i++)
+    {
+        for(int j = 0; j < m.getMultilines()[i].getLength(); j++)
+        {
+            if(m.getMultilines()[i].getListProcess()[j].getDuration() != 0)
+            {
+                return 0;
+            }            
+        }
+    }
+    return 1;
+}
+
+//Verifica se tem algum processo disponivel
 int zeros(Process* r, int length, int** memory)
 {
     //bool verify = true;
@@ -340,17 +371,8 @@ int zeros(Process* r, int length, int** memory)
     
     return true;
 }
-int  processesFinder(Process* p, int length, int CPU) 
-{
-    for(int process_search = 0; process_search < length; process_search++)
-    {
-    	if((p[process_search].getCPU() == CPU) && (p[process_search].getDuration() != 0)) return process_search;
-    }
-    return 404; 
-}
 
-
-
+//Troca prioridade entre processos (indisponivel)
 // Pvoid verifyPriority(multiLine r, int nProcess) //, Process p)
 // {
 //     int size = 0;

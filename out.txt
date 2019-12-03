@@ -1,0 +1,1347 @@
+MEMORIA GERAL: 872
+--------------------------------------------------
+slice: 0
+	Processo: 0-9-128-1-0
+	Processo: 5-35-256-1-10000
+
+	Processo Atual: 0-9-128-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-10-250-10000
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-9-128-10000
+	Processo: 5-35-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 872
+--------------------------------------------------
+slice: 1
+	Processo: 0-8-128-1-10000
+	Processo: 5-35-256-1-10000
+
+	Processo Atual: 0-8-128-1-10000
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-10-250-10000
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-8-128-10000
+	Processo: 5-35-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 622
+--------------------------------------------------
+slice: 2
+	Processo: 2-9-250-0-0
+	Processo: 7-10-64-0-10000
+
+	Processo Atual: 2-9-250-0-0
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 2
+	Processo: 0-7-128-1-1
+	Processo: 5-35-256-1-10000
+
+	Processo Atual: 0-7-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-9-250-0
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-7-128-1
+	Processo: 5-35-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 3
+	Processo: 2-8-250-0-0
+	Processo: 7-10-64-0-10000
+
+	Processo Atual: 2-8-250-0-0
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 3
+	Processo: 0-6-128-1-1
+	Processo: 5-35-256-1-10000
+
+	Processo Atual: 0-6-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-8-250-0
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-6-128-1
+	Processo: 5-35-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 4
+	Processo: 2-7-250-0-0
+	Processo: 7-10-64-0-10000
+
+	Processo Atual: 2-7-250-0-0
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 4
+	Processo: 0-5-128-1-1
+	Processo: 5-35-256-1-10000
+
+	Processo Atual: 0-5-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-7-250-0
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-5-128-1
+	Processo: 5-35-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 5
+	Processo: 2-6-250-0-0
+	Processo: 7-10-64-0-10000
+
+	Processo Atual: 2-6-250-0-0
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 5
+	Processo: 0-4-128-1-1
+	Processo: 5-35-256-1-10000
+
+	Processo Atual: 0-4-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-6-250-0
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-4-128-1
+	Processo: 5-35-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 6
+	Processo: 2-5-250-0-0
+	Processo: 7-10-64-0-10000
+
+	Processo Atual: 2-5-250-0-0
+--------------------------------------------------
+MEMORIA GERAL: 366
+--------------------------------------------------
+slice: 6
+	Processo: 0-4-128-1-10000
+	Processo: 5-34-256-1-1
+
+	Processo Atual: 5-34-256-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-5-250-0
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-4-128-10000
+	Processo: 5-34-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 366
+--------------------------------------------------
+slice: 7
+	Processo: 2-4-250-0-0
+	Processo: 7-10-64-0-10000
+
+	Processo Atual: 2-4-250-0-0
+--------------------------------------------------
+MEMORIA GERAL: 366
+--------------------------------------------------
+slice: 7
+	Processo: 0-4-128-1-10000
+	Processo: 5-33-256-1-1
+
+	Processo Atual: 5-33-256-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-4-250-0
+	Processo: 7-10-64-10000
+Prioridade: 1
+	Processo: 0-4-128-10000
+	Processo: 5-33-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 552
+--------------------------------------------------
+slice: 8
+	Processo: 2-4-250-0-10000
+	Processo: 7-9-64-0-0
+
+	Processo Atual: 7-9-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 8
+	Processo: 2-3-250-0-1
+	Processo: 7-9-64-0-0
+
+	Processo Atual: 2-3-250-0-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-3-250-1
+	Processo: 7-9-64-0
+Prioridade: 1
+	Processo: 0-4-128-10000
+	Processo: 5-33-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 9
+	Processo: 2-3-250-0-1
+	Processo: 7-8-64-0-0
+
+	Processo Atual: 7-8-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 9
+	Processo: 2-2-250-0-1
+	Processo: 7-8-64-0-0
+
+	Processo Atual: 2-2-250-0-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-2-250-1
+	Processo: 7-8-64-0
+Prioridade: 1
+	Processo: 0-4-128-10000
+	Processo: 5-33-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 10
+	Processo: 2-2-250-0-1
+	Processo: 7-7-64-0-0
+
+	Processo Atual: 7-7-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 10
+	Processo: 2-1-250-0-1
+	Processo: 7-7-64-0-0
+
+	Processo Atual: 2-1-250-0-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-1-250-1
+	Processo: 7-7-64-0
+Prioridade: 1
+	Processo: 0-4-128-10000
+	Processo: 5-33-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 11
+	Processo: 2-1-250-0-1
+	Processo: 7-6-64-0-0
+
+	Processo Atual: 7-6-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 11
+	Processo: 2-0-250-0-1
+	Processo: 7-6-64-0-0
+
+	Processo Atual: 2-0-250-0-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-1
+	Processo: 7-6-64-0
+Prioridade: 1
+	Processo: 0-4-128-10000
+	Processo: 5-33-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 12
+	Processo: 2-0-250-0-1
+	Processo: 7-5-64-0-0
+
+	Processo Atual: 7-5-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 430
+--------------------------------------------------
+slice: 12
+	Processo: 0-3-128-1-1
+	Processo: 5-33-256-1-10000
+
+	Processo Atual: 0-3-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-5-64-0
+Prioridade: 1
+	Processo: 0-3-128-1
+	Processo: 5-33-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 430
+--------------------------------------------------
+slice: 13
+	Processo: 2-0-250-0-10000
+	Processo: 7-4-64-0-0
+
+	Processo Atual: 7-4-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 430
+--------------------------------------------------
+slice: 13
+	Processo: 0-2-128-1-1
+	Processo: 5-33-256-1-10000
+
+	Processo Atual: 0-2-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-4-64-0
+Prioridade: 1
+	Processo: 0-2-128-1
+	Processo: 5-33-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 430
+--------------------------------------------------
+slice: 14
+	Processo: 2-0-250-0-10000
+	Processo: 7-3-64-0-0
+
+	Processo Atual: 7-3-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 14
+	Processo: 0-2-128-1-10000
+	Processo: 5-32-256-1-1
+
+	Processo Atual: 5-32-256-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-3-64-0
+Prioridade: 1
+	Processo: 0-2-128-10000
+	Processo: 5-32-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 15
+	Processo: 2-0-250-0-10000
+	Processo: 7-2-64-0-0
+
+	Processo Atual: 7-2-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 15
+	Processo: 0-2-128-1-10000
+	Processo: 5-31-256-1-1
+
+	Processo Atual: 5-31-256-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-2-64-0
+Prioridade: 1
+	Processo: 0-2-128-10000
+	Processo: 5-31-256-1
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 302
+--------------------------------------------------
+slice: 16
+	Processo: 2-0-250-0-10000
+	Processo: 7-1-64-0-0
+
+	Processo Atual: 7-1-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 430
+--------------------------------------------------
+slice: 16
+	Processo: 0-1-128-1-1
+	Processo: 5-31-256-1-10000
+
+	Processo Atual: 0-1-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-1-64-0
+Prioridade: 1
+	Processo: 0-1-128-1
+	Processo: 5-31-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 430
+--------------------------------------------------
+slice: 17
+	Processo: 2-0-250-0-10000
+	Processo: 7-0-64-0-0
+
+	Processo Atual: 7-0-64-0-0
+--------------------------------------------------
+MEMORIA GERAL: 494
+--------------------------------------------------
+slice: 17
+	Processo: 0-0-128-1-1
+	Processo: 5-31-256-1-10000
+
+	Processo Atual: 0-0-128-1-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-1
+	Processo: 5-31-256-10000
+Prioridade: 2
+	Processo: 10-20-128-10000
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 366
+--------------------------------------------------
+slice: 18
+	Processo: 0-0-128-1-10000
+	Processo: 5-30-256-1-0
+
+	Processo Atual: 5-30-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 18
+	Processo: 10-19-128-2-1
+
+	Processo Atual: 10-19-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-30-256-0
+Prioridade: 2
+	Processo: 10-19-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 19
+	Processo: 0-0-128-1-10000
+	Processo: 5-29-256-1-0
+
+	Processo Atual: 5-29-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 19
+	Processo: 10-18-128-2-1
+
+	Processo Atual: 10-18-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-29-256-0
+Prioridade: 2
+	Processo: 10-18-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 20
+	Processo: 0-0-128-1-10000
+	Processo: 5-28-256-1-0
+
+	Processo Atual: 5-28-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 20
+	Processo: 10-17-128-2-1
+
+	Processo Atual: 10-17-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-28-256-0
+Prioridade: 2
+	Processo: 10-17-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 21
+	Processo: 0-0-128-1-10000
+	Processo: 5-27-256-1-0
+
+	Processo Atual: 5-27-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 21
+	Processo: 10-16-128-2-1
+
+	Processo Atual: 10-16-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-27-256-0
+Prioridade: 2
+	Processo: 10-16-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 22
+	Processo: 0-0-128-1-10000
+	Processo: 5-26-256-1-0
+
+	Processo Atual: 5-26-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 22
+	Processo: 10-15-128-2-1
+
+	Processo Atual: 10-15-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-26-256-0
+Prioridade: 2
+	Processo: 10-15-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 23
+	Processo: 0-0-128-1-10000
+	Processo: 5-25-256-1-0
+
+	Processo Atual: 5-25-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 23
+	Processo: 10-14-128-2-1
+
+	Processo Atual: 10-14-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-25-256-0
+Prioridade: 2
+	Processo: 10-14-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 24
+	Processo: 0-0-128-1-10000
+	Processo: 5-24-256-1-0
+
+	Processo Atual: 5-24-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 24
+	Processo: 10-13-128-2-1
+
+	Processo Atual: 10-13-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-24-256-0
+Prioridade: 2
+	Processo: 10-13-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 25
+	Processo: 0-0-128-1-10000
+	Processo: 5-23-256-1-0
+
+	Processo Atual: 5-23-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 25
+	Processo: 10-12-128-2-1
+
+	Processo Atual: 10-12-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-23-256-0
+Prioridade: 2
+	Processo: 10-12-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 26
+	Processo: 0-0-128-1-10000
+	Processo: 5-22-256-1-0
+
+	Processo Atual: 5-22-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 26
+	Processo: 10-11-128-2-1
+
+	Processo Atual: 10-11-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-22-256-0
+Prioridade: 2
+	Processo: 10-11-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 27
+	Processo: 0-0-128-1-10000
+	Processo: 5-21-256-1-0
+
+	Processo Atual: 5-21-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 27
+	Processo: 10-10-128-2-1
+
+	Processo Atual: 10-10-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-21-256-0
+Prioridade: 2
+	Processo: 10-10-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 28
+	Processo: 0-0-128-1-10000
+	Processo: 5-20-256-1-0
+
+	Processo Atual: 5-20-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 28
+	Processo: 10-9-128-2-1
+
+	Processo Atual: 10-9-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-20-256-0
+Prioridade: 2
+	Processo: 10-9-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 29
+	Processo: 0-0-128-1-10000
+	Processo: 5-19-256-1-0
+
+	Processo Atual: 5-19-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 29
+	Processo: 10-8-128-2-1
+
+	Processo Atual: 10-8-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-19-256-0
+Prioridade: 2
+	Processo: 10-8-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 30
+	Processo: 0-0-128-1-10000
+	Processo: 5-18-256-1-0
+
+	Processo Atual: 5-18-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 30
+	Processo: 10-7-128-2-1
+
+	Processo Atual: 10-7-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-18-256-0
+Prioridade: 2
+	Processo: 10-7-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 31
+	Processo: 0-0-128-1-10000
+	Processo: 5-17-256-1-0
+
+	Processo Atual: 5-17-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 31
+	Processo: 10-6-128-2-1
+
+	Processo Atual: 10-6-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-17-256-0
+Prioridade: 2
+	Processo: 10-6-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 32
+	Processo: 0-0-128-1-10000
+	Processo: 5-16-256-1-0
+
+	Processo Atual: 5-16-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 32
+	Processo: 10-5-128-2-1
+
+	Processo Atual: 10-5-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-16-256-0
+Prioridade: 2
+	Processo: 10-5-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 33
+	Processo: 0-0-128-1-10000
+	Processo: 5-15-256-1-0
+
+	Processo Atual: 5-15-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 33
+	Processo: 10-4-128-2-1
+
+	Processo Atual: 10-4-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-15-256-0
+Prioridade: 2
+	Processo: 10-4-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 34
+	Processo: 0-0-128-1-10000
+	Processo: 5-14-256-1-0
+
+	Processo Atual: 5-14-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 34
+	Processo: 10-3-128-2-1
+
+	Processo Atual: 10-3-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-14-256-0
+Prioridade: 2
+	Processo: 10-3-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 35
+	Processo: 0-0-128-1-10000
+	Processo: 5-13-256-1-0
+
+	Processo Atual: 5-13-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 35
+	Processo: 10-2-128-2-1
+
+	Processo Atual: 10-2-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-13-256-0
+Prioridade: 2
+	Processo: 10-2-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 36
+	Processo: 0-0-128-1-10000
+	Processo: 5-12-256-1-0
+
+	Processo Atual: 5-12-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 36
+	Processo: 10-1-128-2-1
+
+	Processo Atual: 10-1-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-12-256-0
+Prioridade: 2
+	Processo: 10-1-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 37
+	Processo: 0-0-128-1-10000
+	Processo: 5-11-256-1-0
+
+	Processo Atual: 5-11-256-1-0
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 37
+	Processo: 10-0-128-2-1
+
+	Processo Atual: 10-0-128-2-1
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-11-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 38
+	Processo: 0-0-128-1-10000
+	Processo: 5-10-256-1-0
+
+	Processo Atual: 5-10-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-10-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 39
+	Processo: 0-0-128-1-10000
+	Processo: 5-9-256-1-0
+
+	Processo Atual: 5-9-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-9-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 40
+	Processo: 0-0-128-1-10000
+	Processo: 5-8-256-1-0
+
+	Processo Atual: 5-8-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-8-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 41
+	Processo: 0-0-128-1-10000
+	Processo: 5-7-256-1-0
+
+	Processo Atual: 5-7-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-7-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 42
+	Processo: 0-0-128-1-10000
+	Processo: 5-6-256-1-0
+
+	Processo Atual: 5-6-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-6-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 43
+	Processo: 0-0-128-1-10000
+	Processo: 5-5-256-1-0
+
+	Processo Atual: 5-5-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-5-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 44
+	Processo: 0-0-128-1-10000
+	Processo: 5-4-256-1-0
+
+	Processo Atual: 5-4-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-4-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 45
+	Processo: 0-0-128-1-10000
+	Processo: 5-3-256-1-0
+
+	Processo Atual: 5-3-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-3-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 46
+	Processo: 0-0-128-1-10000
+	Processo: 5-2-256-1-0
+
+	Processo Atual: 5-2-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-2-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 47
+	Processo: 0-0-128-1-10000
+	Processo: 5-1-256-1-0
+
+	Processo Atual: 5-1-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-1-256-0
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+MEMORIA GERAL: 238
+--------------------------------------------------
+slice: 48
+	Processo: 0-0-128-1-10000
+	Processo: 5-0-256-1-0
+
+	Processo Atual: 5-0-256-1-0
+--------------------------------------------------
+--------------------------------------------------
+Processos Lidos:	(Chegada/Duracao/Memoria/CPU)   
+
+Prioridade: 0
+	Processo: 2-0-250-10000
+	Processo: 7-0-64-10000
+Prioridade: 1
+	Processo: 0-0-128-10000
+	Processo: 5-0-256-10000
+Prioridade: 2
+	Processo: 10-0-128-1
+Prioridade: 3
+Prioridade: 4
+--------------------------------------------------
+Acabou os processos...

@@ -34,7 +34,6 @@ class roundRobin
         int                  slice; 
         int                  priority;
         int                  length;
-        bool                 loop_indector = false;
         int*                 current;
     public:
         void                setListProcess(Process* process, int nProcess);
@@ -64,4 +63,4 @@ void printAllProcess(multiLine m);
 void printOneLineOfProcess(roundRobin line, int clock, int nCPUs);
 int verifyListProcess(Process* r, int length, int clock, int current_process, int** memory, int current_cpu);
 int zeros(Process* r, int length, int** memory);
-int  processesFinder(Process* p, int length, int CPU);
+int buscaEatualizacao(multiLine m);
