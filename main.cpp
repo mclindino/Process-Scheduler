@@ -9,7 +9,8 @@ int main(int argc, char* argv[])
     char* fileName = argv[3];
 
     //Retira dados do arquivo
-    Process* process = NULL;    
+    Process* process = NULL;
+    Process* aux = NULL;    
     ifstream processFile(fileName);
     int* parameters;
     int nProcess = 0;
@@ -20,46 +21,54 @@ int main(int argc, char* argv[])
         nProcess++;
 
         process = (Process*) realloc(process, nProcess * sizeof(Process));
+        aux = (Process*) realloc(process, nProcess * sizeof(Process));
         process[nProcess - 1].setParameters(parameters[0], parameters[1], 
                                             parameters[2], parameters[3], 10000);
+        aux[nProcess - 1].setParameters(parameters[0], parameters[1], 
+                                        parameters[2], parameters[3], 10000);
         //cout << process[nProcess-1].getMemory() << endl;
     }
 
     //Instancia e ajusta todos os processos na multifila
     multiLine lista;
-    lista.ajustProcess(process, nProcess);
+    lista.ajustProcess(process, nProcess, nCPUs);
     printAllProcess(lista);
     //Tempo limite para processar todos os Processos (Variavel i)
     for(int slice = 0; slice < 200000; slice++)
     {
-        for(int cpuID = 0; cpuID < nCPUs; cpuID++)
+        for(int cpuID = 1; cpuID <= nCPUs; cpuID++)
         {
-            if(lista.getMultilines()[0].sliceEdge(slice, cpuID))
+            if(lista.getMultilines()[0].sliceEdge(slice, cpuID, &memory))
             {
-                printOneLineOfProcess(lista.getMultilines()[0], slice);
+                cout << "MEMORIA GERAL: " << memory << endl;
+                //printOneLineOfProcess(lista.getMultilines()[0], slice, cpuID);
             }
             
-            else if(lista.getMultilines()[1].sliceEdge(slice, cpuID))
+            else if(lista.getMultilines()[1].sliceEdge(slice, cpuID, &memory))
             {
-                printOneLineOfProcess(lista.getMultilines()[1], slice);
+                cout << "MEMORIA GERAL: " << memory << endl;
+                //printOneLineOfProcess(lista.getMultilines()[1], slice, cpuID);
             }
 
-            else if(lista.getMultilines()[2].sliceEdge(slice, cpuID))
+            else if(lista.getMultilines()[2].sliceEdge(slice, cpuID, &memory))
             {
-                printOneLineOfProcess(lista.getMultilines()[2], slice);
+                cout << "MEMORIA GERAL: " << memory << endl;
+                //printOneLineOfProcess(lista.getMultilines()[2], slice, cpuID);
             }
-            else if(lista.getMultilines()[3].sliceEdge(slice, cpuID))
+            else if(lista.getMultilines()[3].sliceEdge(slice, cpuID, &memory))
             {
-                printOneLineOfProcess(lista.getMultilines()[3], slice);
+                cout << "MEMORIA GERAL: " << memory << endl;
+                //printOneLineOfProcess(lista.getMultilines()[3], slice, cpuID);
             }
-            else if(lista.getMultilines()[4].sliceEdge(slice, cpuID))
+            else if(lista.getMultilines()[4].sliceEdge(slice, cpuID, &memory))
             {
-                printOneLineOfProcess(lista.getMultilines()[4], slice);
+                cout << "MEMORIA GERAL: " << memory << endl; 
+                //printOneLineOfProcess(lista.getMultilines()[4], slice, cpuID);
             }
             else
             {
-                cout << "Acabou os processos..." << endl;
-                exit(1);
+                //cout << "Acabou os processos..." << endl;
+                //continue;
             }
         }
         //lista.getMultilines()[0].sliceEdge(i);

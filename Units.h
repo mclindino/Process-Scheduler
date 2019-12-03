@@ -35,17 +35,18 @@ class roundRobin
         int                  priority;
         int                  length;
         bool                 loop_indector = false;
+        int*                 current;
     public:
-        int                 current = 0;
         void                setListProcess(Process* process, int nProcess);
         void                setSlice(int slice);
-        Process             getCurrentProcess();
-        bool                sliceEdge(int clock, int current_CPU);
-        int                 setPriority(int priority);
+        Process             getCurrentProcess(int current_CPU);
+        bool                sliceEdge(int clock, int current_CPU, int* memory);
+        void                setPriority(int priority);
         int                 getPriority();
         int                 getLength();
         void                setLength(int length);
         Process*            getListProcess();
+        void                setCurrent(int nCPUs);
 };  
 
 class multiLine
@@ -53,13 +54,14 @@ class multiLine
     private:
         roundRobin*  multilines;
     public:
-        void            ajustProcess(Process* process, int nProcess);
+        void            ajustProcess(Process* process, int nProcess, int nCPUs);
         void            freeMultilines();
         roundRobin*     getMultilines();
 };
 
 int* readParameters(string parameters);
 void printAllProcess(multiLine m);
-void printOneLineOfProcess(roundRobin line, int clock);
-int verifyListProcess(Process* r, int length);
+void printOneLineOfProcess(roundRobin line, int clock, int nCPUs);
+int verifyListProcess(Process* r, int length, int clock, int current_process, int** memory, int current_cpu);
+int zeros(Process* r, int length, int** memory);
 int  processesFinder(Process* p, int length, int CPU);
