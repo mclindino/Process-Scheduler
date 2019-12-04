@@ -12,4 +12,6 @@ class Processo
         int tRestante;
         int tPrioridade;
         int tSlice;
+        int numaCPU;
+        int prioridadePrimaria;
 };
