@@ -1,11 +1,11 @@
-main: main.o Units.o
-	g++ main.o Units.o -o main
+main: main.o Processo.o
+	g++ main.o Processo.o -o main
 
 main.o: main.cpp
 	g++ -c main.cpp
 
-Units.o: Units.cpp Units.h
-	g++ -c Units.cpp
+Units.o: Processo.cpp Processo.h
+	g++ -c Processo.cpp
 
 clean:
 	rm *.o main
